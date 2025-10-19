@@ -3,8 +3,10 @@ import React from "react";
 import BlinkBlink from "./BlinkBlink";
 
 import Products from "./Products";
-import About from "./About";
+
+import ThankYou from "./ThankYou"
 import LandingPage from "./LandingPage";
+import TrackOrder from "./TrackOrder";
 
 const Main = () => {
   return (
@@ -14,8 +16,8 @@ const Main = () => {
 
         <BlinkBlink />
         <Products />
-
-        <About />
+<TrackOrder/>
+        <ThankYou/>
       </article>
     </main>
   );

@@ -24,12 +24,13 @@ const Header = () => {
     Products
   </a>
 
-  <a href="#about" className="hover:text-blue-600 transition">
+  <a href="#thankyou" className="hover:text-blue-600 transition">
     Contact
   </a>
-  <Link to="/track" className="hover:text-blue-600 transition">
-  Track Order
-</Link>
+
+ <a href="#track" className="hover:text-blue-600 transition">
+    Track Order
+  </a>
 </nav>
 
 
@@ -73,7 +74,7 @@ const Header = () => {
       </a>
     </li>
     <li>
-      <a href="#about" className="hover:text-blue-400 transition">
+      <a href="#thankyou" className="hover:text-blue-400 transition">
         Contact
       </a>
     </li>

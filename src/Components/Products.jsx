@@ -3,9 +3,9 @@ import React from "react";
 const Projects = () => {
   const projectdetails = [
     {
-      name: "BlinkBlink",
-      loc: "blinkBlinkNoBg.png",
-      des: "A ai robo  with full of Emotion..",
+      name: "Blinki",
+      loc: "blinkipng.png",
+      des: "A smart mini robo  with full of Emotion..",
       link: "https://delishfoodsite.vercel.app/",
     },
     {

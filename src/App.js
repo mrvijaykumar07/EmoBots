@@ -4,9 +4,7 @@ import Header from "./Components/Header";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import About from "./Components/About";
-import Product from "./Components/Products";
-import BlinkBlink from "./Components/BlinkBlink";
+
 import Checkout from "./Components/Checkout";
 import TrackOrder from "./Components/TrackOrder";
 
@@ -25,9 +23,7 @@ const App = () => {
               <Header />
               <Routes>
                 <Route path="/" element={<Main />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/products" element={<Product />} />
-                <Route path="/blinki" element={<BlinkBlink />} />
+  
               </Routes>
               <Footer />
             </>

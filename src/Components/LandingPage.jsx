@@ -11,7 +11,7 @@ const Photosection = () => {
           <img
             src="/assets/images/mobileBanner.jpg"
             alt="Bijaya Kumar"
-            className=" w-96 h-[220px] object-cover  md:hidden mb-3 "
+            className=" w-96 h-[240px] object-cover  md:hidden mb-3 "
           />
         </div>
 
@@ -19,19 +19,19 @@ const Photosection = () => {
           <h1 className="md:text-2xl text-xl font-bold mb-3">
             Representing....
           </h1>
-          <h1 className="md:text-8xl text-6xl font-bold mb-3"> EmoBot</h1>
+          <h1 className="md:text-6xl text-5xl font-bold mb-3"> MagicPupils</h1>
           <p className="text-xl text-gray-50 font-bold">
-            Your Cute Mini Robooos
+            Cute Mini Robooos
           </p>
 
           <div>
             <p className="mt-6 text-lg max-w-2xl hidden md:block">
-              “Hey..! I’m your tiny RoBo buddy — nice to meet you! It’s kinda
+              “Hey..! I’m your tiny RoBo Blinki — nice to meet you! It’s kinda
               lonely here… would you please take me to your home ? I promise to
               be your funniest little companion!”
             </p>
             <p className="mt-6 text-sm max-w-2xl md:hidden ">
-              “Hey..! I’m your tiny RoBo buddy — nice to meet you! It’s kinda
+              “Hey..! I’m your tiny RoBo Blinki — nice to meet you! It’s kinda
               lonely here… would you please take me to your home ? I promise to
               be your funniest little companion!”
             </p>
@@ -46,7 +46,7 @@ const Photosection = () => {
 
       <div className="mt-8">
         <img
-          src="/assets/images/bannerneon.png"
+          src="/assets/images/blinkiGif.gif"
           alt="Bijaya Kumar"
           className="rounded-full w-[820px] h-[420px] object-cover  hidden md:block "
         />
