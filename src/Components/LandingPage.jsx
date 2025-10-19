@@ -1,6 +1,5 @@
 import React from "react";
-import { downloadOutline } from "ionicons/icons";
-import { IonIcon } from "@ionic/react";
+
 const Photosection = () => {
   return (
     <section

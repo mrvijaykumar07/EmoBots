@@ -1,4 +1,4 @@
-import Photosection from "./LandingPage";
+import React from "react";
 
 import BlinkBlink from "./BlinkBlink";
 

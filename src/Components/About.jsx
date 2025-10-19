@@ -1,21 +1,5 @@
 import React from "react";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaInstagram,
-  FaFacebook,
-  FaTelegramPlane,
-  FaPhone,
-  FaEnvelope,
-  FaUniversity,
-  FaBookOpen,
-  FaAddressCard,
-  FaPaintBrush,
-  FaPen,
-  FaCamera,
-} from "react-icons/fa";
 
-import { SiGmail } from "react-icons/si";
 import TrackOrder from "./TrackOrder";
 
 const About = () => {
