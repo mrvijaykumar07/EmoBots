@@ -1,0 +1,92 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
+const Header = () => {
+  const [navOpen, setNavOpen] = useState(false);
+
+  return (
+    <header className="fixed top-0 left-0 w-full bg-slate-500 shadow-md z-50 px-4 md:px-44">
+      <div className="container mx-auto flex items-center justify-between py-4 px-6">
+        {/* Logo (Left Side) */}
+        <Link to="/" className="text-xl font-extrabold text-gray-900">
+          <img
+            src="/assets/images/logo.png"
+            alt="Pfolio home"
+            className="w-36"
+          />
+        </Link>
+<nav className="hidden md:flex space-x-6 text-white font-medium">
+  <a href="#home" className="hover:text-blue-600 transition">
+    Home
+  </a>
+
+  <a href="#blinki" className="hover:text-blue-600 transition">
+    Products
+  </a>
+
+  <a href="#about" className="hover:text-blue-600 transition">
+    Contact
+  </a>
+  <Link to="/track" className="hover:text-blue-600 transition">
+  Track Order
+</Link>
+</nav>
+
+
+        {/* Mobile Menu Button */}
+        <button
+          className="w-8 h-8 flex flex-col justify-between items-center md:hidden"
+          onClick={() => setNavOpen(!navOpen)}
+          aria-label="Toggle menu"
+        >
+          <span
+            className={`w-6 h-0.5 bg-gray-900 transition-transform ${
+              navOpen ? "rotate-45 translate-y-2" : ""
+            }`}
+          />
+          <span
+            className={`w-6 h-0.5 bg-gray-900 ${navOpen ? "hidden" : ""}`}
+          />
+          <span
+            className={`w-6 h-0.5 bg-gray-900 transition-transform ${
+              navOpen ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          />
+        </button>
+      </div>
+
+{/* Mobile Navbar */}
+<nav
+  className={`md:hidden absolute top-16 left-0 w-full bg-gray-800 text-white shadow-lg transition-all ${
+    navOpen ? "block" : "hidden"
+  }`}
+>
+  <ul className="flex flex-col items-center py-4 space-y-4 text-xl font-medium">
+    <li>
+      <a href="#home" className="hover:text-blue-400 transition">
+        Home
+      </a>
+    </li>
+    <li>
+      <a href="#blinki" className="hover:text-blue-400 transition">
+        Products
+      </a>
+    </li>
+    <li>
+      <a href="#about" className="hover:text-blue-400 transition">
+        Contact
+      </a>
+    </li>
+      <li>
+      <a href="#track" className="hover:text-blue-400 transition">
+        Track Order
+      </a>
+    </li>
+  </ul>
+</nav>
+
+    </header>
+  );
+};
+
+export default Header;
