@@ -40,14 +40,17 @@ const Header = () => {
           aria-label="Toggle menu"
         >
           <span
+          onClick={() => setNavOpen(!navOpen)}
             className={`w-5 h-0.5 bg-white transition-transform ${
               navOpen ? "rotate-45 translate-y-2" : ""
             }`}
           />
           <span
+          onClick={() => setNavOpen(!navOpen)}
             className={`w-5 h-0.5 bg-white ${navOpen ? "hidden" : ""}`}
           />
           <span
+          onClick={() => setNavOpen(!navOpen)}
             className={`w-5 h-0.5 bg-white transition-transform ${
               navOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
@@ -56,34 +59,52 @@ const Header = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <nav
-        className={`md:hidden absolute top-14 left-0 w-full bg-gray-800 text-white shadow-lg transition-all ${
-          navOpen ? "block" : "hidden"
-        }`}
+{/* Mobile Navbar */}
+<nav
+  className={`md:hidden absolute top-14 left-0 w-full bg-gray-800 text-white shadow-lg transition-all ${
+    navOpen ? "block" : "hidden"
+  }`}
+>
+  <ul className="flex flex-col items-center py-4 space-y-4 text-lg font-medium">
+    <li>
+      <a
+        href="#home"
+        className="hover:text-blue-400 transition"
+        onClick={() => setNavOpen(false)}
       >
-        <ul className="flex flex-col items-center py-4 space-y-4 text-lg font-medium">
-          <li>
-            <a href="#home" className="hover:text-blue-400 transition">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#blinki" className="hover:text-blue-400 transition">
-              Products
-            </a>
-          </li>
-          <li>
-            <a href="#thankyou" className="hover:text-blue-400 transition">
-              Contact
-            </a>
-          </li>
-          <li>
-            <a href="#track" className="hover:text-blue-400 transition">
-              Track Order
-            </a>
-          </li>
-        </ul>
-      </nav>
+        Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="#blinki"
+        className="hover:text-blue-400 transition"
+        onClick={() => setNavOpen(false)}
+      >
+        Products
+      </a>
+    </li>
+    <li>
+      <a
+        href="#thankyou"
+        className="hover:text-blue-400 transition"
+        onClick={() => setNavOpen(false)}
+      >
+        Contact
+      </a>
+    </li>
+    <li>
+      <a
+        href="#track"
+        className="hover:text-blue-400 transition"
+        onClick={() => setNavOpen(false)}
+      >
+        Track Order
+      </a>
+    </li>
+  </ul>
+</nav>
+
     </header>
   );
 };

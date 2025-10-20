@@ -15,7 +15,7 @@ const Projects = () => {
       link: "",
     },
     {
-      name: "KunuMunu",
+      name: "Rexyy",
          loc: "3robo.png",
        des: "Coming Soon",
       link: "",
