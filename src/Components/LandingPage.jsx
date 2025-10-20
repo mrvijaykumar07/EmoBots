@@ -4,10 +4,10 @@ const Photosection = () => {
   return (
     <section
       id="home"
-      className="hero bg-gray-800  md:py-20 mx-auto flex w-full h-screen   md:px-44"
+      className="hero bg-gray-800  mx-auto flex w-full h-screen pb-20  md:px-44"
     >
-      <div className="flex flex-col  justify-center container ">
-        <div className=" ">
+      <div className="flex flex-col  justify-start container ">
+        <div className=" w-screen h-full flex items-center justify-center ">
           <img
             src="/assets/images/mobileBanner.jpg"
             alt="Bijaya Kumar"

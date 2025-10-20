@@ -17,7 +17,7 @@ const CircularGallery = () => {
         <img
           src={mainImage}
           alt="Main Robot"
-          className="w-66 md:h-64  h-60 object-contain border-4 border-gray-950 rounded-full border-grey-800 shadow-lg transition-transform duration-300 hover:scale-105"
+          className="w-66 md:h-64  h-56 object-contain border-4 border-gray-950 rounded-full border-grey-800 shadow-lg transition-transform duration-300 hover:scale-105"
         />
       </div>
 

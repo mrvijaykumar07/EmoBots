@@ -15,77 +15,75 @@ const Header = () => {
             className="w-36"
           />
         </Link>
-<nav className="hidden md:flex space-x-6 text-white font-medium">
-  <a href="#home" className="hover:text-blue-600 transition">
-    Home
-  </a>
+        <nav className="hidden md:flex space-x-6 text-white font-medium">
+          <a href="#home" className="hover:text-blue-600 transition">
+            Home
+          </a>
 
-  <a href="#blinki" className="hover:text-blue-600 transition">
-    Products
-  </a>
+          <a href="#blinki" className="hover:text-blue-600 transition">
+            Products
+          </a>
 
-  <a href="#thankyou" className="hover:text-blue-600 transition">
-    Contact
-  </a>
+          <a href="#thankyou" className="hover:text-blue-600 transition">
+            Contact
+          </a>
 
- <a href="#track" className="hover:text-blue-600 transition">
-    Track Order
-  </a>
-</nav>
-
+          <a href="#track" className="hover:text-blue-600 transition">
+            Track Order
+          </a>
+        </nav>
 
         {/* Mobile Menu Button */}
         <button
-          className="w-8 h-8 flex flex-col justify-between items-center md:hidden"
+          className="w-6 h-[18px] flex flex-col gap-1 justify-between items-center md:hidden"
           onClick={() => setNavOpen(!navOpen)}
           aria-label="Toggle menu"
         >
           <span
-            className={`w-6 h-0.5 bg-gray-900 transition-transform ${
+            className={`w-5 h-0.5 bg-white transition-transform ${
               navOpen ? "rotate-45 translate-y-2" : ""
             }`}
           />
           <span
-            className={`w-6 h-0.5 bg-gray-900 ${navOpen ? "hidden" : ""}`}
+            className={`w-5 h-0.5 bg-white ${navOpen ? "hidden" : ""}`}
           />
           <span
-            className={`w-6 h-0.5 bg-gray-900 transition-transform ${
+            className={`w-5 h-0.5 bg-white transition-transform ${
               navOpen ? "-rotate-45 -translate-y-2" : ""
             }`}
           />
         </button>
       </div>
 
-{/* Mobile Navbar */}
-<nav
-  className={`md:hidden absolute top-16 left-0 w-full bg-gray-800 text-white shadow-lg transition-all ${
-    navOpen ? "block" : "hidden"
-  }`}
->
-  <ul className="flex flex-col items-center py-4 space-y-4 text-xl font-medium">
-    <li>
-      <a href="#home" className="hover:text-blue-400 transition">
-        Home
-      </a>
-    </li>
-    <li>
-      <a href="#blinki" className="hover:text-blue-400 transition">
-        Products
-      </a>
-    </li>
-    <li>
-      <a href="#thankyou" className="hover:text-blue-400 transition">
-        Contact
-      </a>
-    </li>
-      <li>
-      <a href="#track" className="hover:text-blue-400 transition">
-        Track Order
-      </a>
-    </li>
-  </ul>
-</nav>
-
+      {/* Mobile Navbar */}
+      <nav
+        className={`md:hidden absolute top-14 left-0 w-full bg-gray-800 text-white shadow-lg transition-all ${
+          navOpen ? "block" : "hidden"
+        }`}
+      >
+        <ul className="flex flex-col items-center py-4 space-y-4 text-lg font-medium">
+          <li>
+            <a href="#home" className="hover:text-blue-400 transition">
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="#blinki" className="hover:text-blue-400 transition">
+              Products
+            </a>
+          </li>
+          <li>
+            <a href="#thankyou" className="hover:text-blue-400 transition">
+              Contact
+            </a>
+          </li>
+          <li>
+            <a href="#track" className="hover:text-blue-400 transition">
+              Track Order
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 };

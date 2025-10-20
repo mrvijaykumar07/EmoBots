@@ -55,8 +55,8 @@ const ProductPage = () => {
             Blinki – Your Smart Mini Robo Buddy
           </h2>
           <div className="flex gap-3">
-            <p className="text-blue-400 font-semibold">Brand: EmoBot</p>
-            <p className="text-yellow-400">★★★★☆ (4.2 ratings)</p>
+            <p className="text-blue-400 font-semibold">Brand: Magic Pupils</p>
+            {/* <p className="text-yellow-400">★★★★☆ (4.2 ratings)</p> */}
           </div>
 
           <p className="text-gray-300 mt-4 leading-relaxed text-sm hidden md:block">
