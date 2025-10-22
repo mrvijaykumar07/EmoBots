@@ -5,7 +5,7 @@ const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-slate-500 shadow-md z-50 px-4 md:px-44">
+    <header className="fixed top-0 left-0 w-full bg-slate-500 shadow-lg z-50 px-4 md:px-44">
       <div className="container mx-auto flex items-center justify-between py-4 px-6">
         {/* Logo (Left Side) */}
         <Link to="/" className="text-xl font-extrabold text-gray-900">

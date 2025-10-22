@@ -10,12 +10,12 @@ const ProductPage = () => {
 
   // 👇 Track visibility of section to show/hide floating price bar
 
-  const images = [
-    "/assets/images/blinkijpg.jpg",
-    "/assets/images/blinkijpg.jpg",
-    "/assets/images/blinkijpg.jpg",
-    "/assets/images/blinkijpg.jpg",
-  ];
+  // const images = [
+  //   "/assets/images/blinkijpg.jpg",
+  //   "/assets/images/blinkijpg.jpg",
+  //   "/assets/images/blinkijpg.jpg",
+  //   "/assets/images/blinkijpg.jpg",
+  // ];
 
   // const [mainImage, setMainImage] = useState(images[0]);
 
@@ -115,7 +115,7 @@ const ProductPage = () => {
                 <p className="md:text-2xl text-2xl font-bold text-green-400">
                   ₹949
                 </p>
-                <p className="text-gray-400 line-through text-lg">₹1799</p>
+                <p className="text-gray-400 line-through md:text-lg">₹1799</p>
                 <span className="md:text-sm text-xs font-semibold text-green-50 bg-opacity-20 px-2 py-1 rounded-md">
                   47% OFF
                 </span>
@@ -136,9 +136,9 @@ const ProductPage = () => {
    {/* Buy Now Button */}
       <button
         onClick={() => setModalOpen(true)}
-        className="bg-green-600 hover:bg-green-700 md:px-14 md:mr-8 px-4 py-2 rounded-lg font-semibold text-sm transition-all"
+        className="bg-green-600 hover:bg-green-700 md:px-14 md:mr-8 px-4 py-2 rounded-lg font-semibold md:text-sm text-xs transition-all"
       >
-        Buy Now
+        Interested
       </button>
 
       {/* Interest Modal */}

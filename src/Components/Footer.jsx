@@ -1,7 +1,7 @@
 import { IonIcon } from "@ionic/react";
 import { logoInstagram, logoLinkedin } from "ionicons/icons";
 import { Link } from "react-router-dom";
- import { Phone, PhoneCall, Mail, MapPin } from "lucide-react";
+ import { Phone, Mail} from "lucide-react";
 const Footer = () => {
   return (
    <footer className="bg-gray-900 text-white py-10 px-4 md:px-16">
